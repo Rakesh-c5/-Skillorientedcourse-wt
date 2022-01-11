@@ -1,0 +1,34 @@
+<html>
+        <head>
+            <title>
+                first html
+            </title>
+        </head>
+        <body>
+            <form name="form_st" action="serveraddress">
+                Name:<input name="name" value="cse"><br>
+                password=<input name="pwd" type="password" value="12345"><br>
+                <input type="button" value="click value"  onclick="readValues()"> 
+                
+            </form>
+            <script>
+                function readValues()
+                {
+                        f_name=form_st.name.value;
+                        N_password=document.form_st.pwd.value;
+                       // document.writeln("name is "+f_name);
+                        //document.write("password is "+N_password);
+                 if(f_name=="" || f_name==null)
+                {
+                        alert("enter name");
+                }
+                else
+                {
+                    document.write(f_name)
+                }
+                        
+                }
+
+            </script>
+        </body>
+</html>
